@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #242424;
+    overflow: hidden;
+}
+
+.centralizar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tela {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    flex-direction: column;
+    position: fixed; 
+    top: 0;
+}
+
+.titulo {
+    color: #eaeaea;
+}
+
+.container_input, .container_tarefas {
+    width: 100%;
+    position: relative;
+}
+
+.container_input {
+    width: 90%;
+    height: 52px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #eaeaea;
+    position: fixed;
+    bottom: 10px;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    padding-left: 16px;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+}
+
+.btn-salvar {
+    width: 14%;
+    height: 100%;
+    padding: 5px;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+}
+
+.container_tarefas {
+    height: 450px;
+    margin-top: 30px;
+    overflow-y: auto;
+}
+
+.container_tarefas::-webkit-scrollbar {
+    width: 5px;
+}
+
+.tarefa {
+    width: 100%;
+    height: 52px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: 'center';
+    justify-content: space-between;
+    background-color: #eaeaea;
+}
+
+.txt-tarefa {
+    height: 100%;
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.div-btn {
+    width: 14%;
+    height: 100%;
+}
+
+.btn-excluir {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+}
+
+.finalizada {
+    background-color: #00a161;
+}
